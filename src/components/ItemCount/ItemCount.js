@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const ItemCount = ({ stock = 10, initial = 0 }) => {
+export const ItemCount = ({ stock = 10, initial = 0, onAdd }) => {
   const [cantidad, setCantidad] = useState(initial);
   const handleRestar = () => {
     if (cantidad > initial) {
@@ -23,7 +23,14 @@ export const ItemCount = ({ stock = 10, initial = 0 }) => {
         +
       </button>
       <div>
-        <button className="btn btn-success my-2">Agregar</button>
+        <button
+          onClick={() => {
+            onAdd(cantidad);
+          }}
+          className="btn btn-success my-2"
+        >
+          Agregar
+        </button>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from "react";
-import { BsFillCartFill } from "react-icons/bs";
+import { FaShoppingCart } from "react-icons/fa";
 import "./CartWidget.css";
 
 export const CartWidget = () => {
   return (
     <div className="cart-widget">
-      <BsFillCartFill />
+      <FaShoppingCart />
     </div>
   );
 };
