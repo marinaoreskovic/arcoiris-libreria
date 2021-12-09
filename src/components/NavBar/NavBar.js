@@ -7,7 +7,6 @@ export const NavBar = () => {
     <header class="header">
       <nav class="navbar">
         <Link to="/category/inicio">Arcoíris</Link>
-        <a href="#" class="nav-logo"></a>
         <ul class="nav-menu">
           <li class="nav-item">
             <Link to="/category/nostros">Nosotros</Link>
