@@ -1,18 +1,45 @@
 import React from "react";
 
-export const ItemCount = ({ increment, decrement, onAdd, counter }) => {
+export const ItemCount = ({
+  increment,
+  decrement,
+  onAdd,
+  counter,
+  min,
+  max,
+}) => {
+  // const btnRestarConfig = {
+  //     onClick: decrement,
+  //     className: `btn ${counter === min ? "btn-outline-danger" : "btn-outline-primary"}`
+  // }
+
+  const btnStyles = {
+    btnRestar: {
+      onClick: decrement,
+      className: `btn ${
+        counter === min ? "btn-outline-danger" : "btn-outline-primary"
+      }`,
+    },
+    btnSumar: {
+      onClick: increment,
+      className: counter === max ? "btn btn-danger" : "btn btn-primary",
+    },
+  };
+
   return (
     <div className="m-4">
-      <button onClick={decrement} className="btn btn-outline-primary">
-        -
-      </button>
+      <button {...btnStyles.btnRestar}>-</button>
+
       <span className="mx-2">{counter}</span>
-      <button onClick={increment} className="btn btn-primary">
-        +
-      </button>
+
+      <button {...btnStyles.btnSumar}>+</button>
 
       <div>
-        <button className="btn btn-success my-2" onClick={onAdd}>
+        <button
+          className="btn btn-success my-2"
+          disabled={counter === min}
+          onClick={onAdd}
+        >
           Agregar
         </button>
       </div>

@@ -39,6 +39,8 @@ export const ItemDetail = ({ item }) => {
           decrement={decrement}
           onAdd={handleAgregar}
           counter={counter}
+          min={0}
+          max={item.stock}
         />
       ) : (
         <Link to="/cart" className="btn btn-success my-3">

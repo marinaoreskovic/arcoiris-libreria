@@ -9,6 +9,8 @@ export const Item = ({ item }) => {
       <p>Precio: ${item.precio}</p>
       <p>{item.desc}</p>
       <p>Categoría: {item.category}</p>
+      {item.oferta && <h4>ON SALE!</h4>}
+
       <Link to={`/detail/${item.id}`} className="btn btn-primary">
         Ver más
       </Link>
