@@ -4,7 +4,7 @@ export const stock = [
     nombre: "Agenda 2022",
     precio: 1500,
     img: "https://via.placeholder.com/200",
-    desc: "Tu agenda FW Maxi semanal tiene 176 páginas divididas en: *  Vista semanal horario de 7 a 21 (media hr marcada) + espacio para notas* Calendario 2022 y 2023* Organizador de semanas*12 Portada mensuales con espacio para objetivos*12 Planner mensual*15 páginas de notas*2 hojas de stickers – 98 stickers*Sobre con diseño laminado 160g*Cinta señaladora + elástico a tono",
+    desc: "Agenda 2022 coon 176 paginas."
     category: "agendas",
     stock: 20,
     oferta: false,
@@ -16,7 +16,7 @@ export const stock = [
     img: "https://via.placeholder.com/200",
     desc: "Acuarelas x12 colores Trabi. Estuche rígido. Incluye pincel.",
     category: "acuarelas",
-    stock: 20,
+    stock: 15,
     oferta: true,
   },
   {
@@ -26,7 +26,7 @@ export const stock = [
     img: "https://via.placeholder.com/200",
     desc: "Bliste por 6 resaltadores PASTEL ANCHOS.El blister incluye 6 colores pasteles, super delicados, para descansar tu vista! Los colores son amarillo, naranja, rosa, violeta, celeste y verde",
     category: "resaltadores",
-    stock: 20,
+    stock: 30,
     oferta: false,
   },
   {
@@ -46,7 +46,7 @@ export const stock = [
     img: "https://via.placeholder.com/200",
     desc: "Calculadora,Científica,252 Funciones,Display natural 4 líneas,Classwiz –  Ideal Secundaria, Escuelas Técnicas – Factorización Prima – Enteros, Color Negro",
     category: "calculadoras",
-    stock: 20,
+    stock: 40,
     oferta: false,
   },
   {
@@ -66,7 +66,7 @@ export const stock = [
     img: "https://via.placeholder.com/200",
     desc: "Cuadernillo de 84 hojas rayadas de 65g/m2, formato 223×295 mm, tapa semirrígida.Son super practicos y lindos, el cuadernillo que todos eligen.Con una hermosa variedad de diseños y colores.Diseño de tapas sujeto a disponibilidad.",
     category: "cuadernillos",
-    stock: 20,
+    stock: 50,
     oferta: true,
   },
   {
